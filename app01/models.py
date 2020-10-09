@@ -13,6 +13,9 @@ class Book(models.Model):
     models.CASCADE 级联删除
     models.PROTECT  保护
     models.SET(v) 删除后设置为某个值
-    models.SETDEFAULT 删除后设置为默认值
+    models.SETDEFAULT 删除后设置为默认值 
     models.SET_NULL 删除后设置为NULL
     '''
+class Author(models.Model):
+    name = models.CharField(max_length=32)
+    books = models.ManyToManyField('Book')

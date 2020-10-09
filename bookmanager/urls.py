@@ -24,4 +24,10 @@ urlpatterns = [
     path('publisher_edit/', views.publisher_edit),
     path('book_list/', views.book_list),
     path('book_add/', views.book_add),
+    path('book_del/', views.book_del),
+    path('book_edit/', views.book_edit),
+    path('author_list/', views.author_list),
+    path('author_add/', views.author_add),
+    path('author_del/', views.author_del),
+    path('author_edit/', views.author_edit),
 ]
